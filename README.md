@@ -6,4 +6,5 @@
 将项目作为库工程添加到依赖库。
 
 开始录音：MiliAudio.startRecord()
+
 停止录音：MiliAudio.stopRecord()
