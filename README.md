@@ -8,3 +8,6 @@
 开始录音：MiliAudio.startRecord()
 
 停止录音：MiliAudio.stopRecord()
+
+
+公司的小项目，放上来做个备份，没想到有人 star 了，于是有动力弄好一点，依赖的相关东西和方法的说明也准备写清楚点
