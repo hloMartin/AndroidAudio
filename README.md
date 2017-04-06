@@ -8,3 +8,5 @@
 开始录音：MiliAudio.startRecord()
 
 停止录音：MiliAudio.stopRecord()
+
+make a test
