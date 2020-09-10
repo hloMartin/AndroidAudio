@@ -1,0 +1,3 @@
+include ':AudioLib'
+include ':app'
+rootProject.name = "AndroidAudio"
