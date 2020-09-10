@@ -52,3 +52,34 @@ mAudioPlayer.resume()
 ```kotlin
 mAudioPlayer.stop()
 ```
+
+设置播放监听，查看播放进度
+```kotlin
+var mPlayListener = object : IPlayListener {
+        override fun onPreparing(filePath: String) {
+        }
+
+        override fun onPrepared(filePath: String) {
+        }
+
+        override fun onStart(filePath: String) {
+        }
+
+        override fun onPause(filePath: String) {
+        }
+
+        override fun onStop(filePath: String) {
+        }
+
+        override fun onComplete(filePath: String) {
+        }
+
+        override fun onProgressNotify(filePath: String, currentDuration: Long, duration: Long) {
+        }
+
+        override fun onError(filePath: String, code: Int, msg: String) {\
+        }
+    }
+mAudioPlayer.addPlayListener(mPlayListener)
+
+```
