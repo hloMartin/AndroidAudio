@@ -1,7 +1,7 @@
 # AndroidAudio
 封装好的音频模块，有录制音频和播放音频的接口（音频格式为 opus ）
 
-so 文件是使用 opus 源码加上一些处理编译生成的 so 文件
+so 文件是使用 [opus 源码](https://opus-codec.org/downloads/) 加上一些处理编译生成的 so 文件
 
 导入 AudioLib 库即可使用
 
