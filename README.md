@@ -3,7 +3,11 @@
 
 so 文件是使用 [opus 源码](https://opus-codec.org/downloads/) 加上一些处理编译生成的 so 文件
 
-导入 AudioLib 库即可使用
+
+## 导入
+```
+implementation 'dodo.lib:audio-opus:1.0.0'
+```
 
 ## 录制音频
 开始录制

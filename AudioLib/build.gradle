@@ -1,6 +1,16 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.9.2'
+    }
+}
 
 android {
     compileSdkVersion 29
@@ -29,6 +39,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+publish {
+    repoName = 'media'
+    userOrg = 'martindodo'
+    groupId = 'dodo.lib'
+    artifactId = 'audio-opus'
+    publishVersion = '1.0.0'
+    desc = 'Android Audio(Opus) Library'
+    website = 'https://github.com/hloMartin/AndroidAudio'
 }
 
 dependencies {
