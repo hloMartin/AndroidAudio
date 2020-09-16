@@ -81,7 +81,7 @@ var mPlayListener = object : IPlayListener {
         override fun onProgressNotify(filePath: String, currentDuration: Long, duration: Long) {
         }
 
-        override fun onError(filePath: String, code: Int, msg: String) {\
+        override fun onError(filePath: String, code: Int, msg: String) {
         }
     }
 mAudioPlayer.addPlayListener(mPlayListener)
