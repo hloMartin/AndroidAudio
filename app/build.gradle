@@ -35,5 +35,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
 //    implementation project(':AudioLib')
-    implementation 'dodo.lib:audio-opus:1.0.0'
+//    implementation 'dodo.lib:audio-opus:1.0.0'
+    //修改仓库到 jitpack
+    implementation 'com.github.hloMartin:AndroidAudio:1.0.0'
 }

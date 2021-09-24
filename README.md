@@ -5,8 +5,21 @@ so 文件是使用 [opus 源码](https://opus-codec.org/downloads/) 加上一些
 
 
 ## 导入
+项目根目录下添加 jitpack 仓库
 ```
-implementation 'dodo.lib:audio-opus:1.0.0'
+...
+allprojects {
+    repositories {
+        ...
+        //添加 jitpack 仓库
+        maven { url 'https://jitpack.io' }
+    }
+}
+...
+```
+APP 模块的 build.gradle 引用
+```
+implementation 'com.github.hloMartin:AndroidAudio:1.0.0'
 ```
 
 ## 录制音频
